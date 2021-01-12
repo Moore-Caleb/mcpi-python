@@ -5,7 +5,7 @@ import random
 
 mc = Minecraft.create()
 # set player to 0,0,0
-mc.player.setPos(11.9,0,-17.8)
+mc.player.setPos(0,0,0)
 # CLEAR AN AREA WITH AIR TO BUILD
 air = 0
 mc.setBlocks(-19,0,-19,19,64,19,air) # clear some air                                               
@@ -30,7 +30,7 @@ while (count < 200):
 	h = random.randint(-20,20)
 	k = random.randint(0,30)
 	l = random.randint(-20,20)
-	mc.setBlock(h,k,l,42,h)
+	mc.setBlock(h,k,l,57,h)
 	count = count + 1
 
 # Lay blocks flat on ground
@@ -42,15 +42,15 @@ mc.setBlock(1,0,-1,41,4)  	# YELLOW  2,  0, -2
 
 
 #  Lay block in the air 
-mc.setBlock(0,2,2,42,0) 	# WHITE   0,  0,  0
-mc.setBlock(1,3,2,42,1) 	# ORANGE  2,  0,  2
-mc.setBlock(-1,3,2,42,2) 	# PINK   -2,  0,  2
-mc.setBlock(-1,1,2,42,3) 	# BLUE   -2,  0, -2
-mc.setBlock(1,1,2,42,4)  	# YELLOW  2,  0, -2
-mc.setBlock(2,2,2,42,4)
-mc.setBlock(3,3,2,42,4)
-mc.setBlock(4,4,2,42,4)
-mc.setBlock(-8,5,4,42,4)
+mc.setBlock(0,2,2,57,0) 	# WHITE   0,  0,  0
+mc.setBlock(1,3,2,57,1) 	# ORANGE  2,  0,  2
+mc.setBlock(-1,3,2,57,2) 	# PINK   -2,  0,  2
+mc.setBlock(-1,1,2,57,3) 	# BLUE   -2,  0, -2
+mc.setBlock(1,1,2,57,4)  	# YELLOW  2,  0, -2
+mc.setBlock(2,2,2,57,4)
+mc.setBlock(3,3,2,57,4)
+mc.setBlock(4,4,2,57,4)
+mc.setBlock(-8,5,4,57,4)
 
 mc.player.setPos(4.0,1.5,-5.2)
 
