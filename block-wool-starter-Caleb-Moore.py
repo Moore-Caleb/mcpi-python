@@ -20,7 +20,7 @@ for h in range (0,21):
 count = 0 
 while (count < 200):
 	h = random.randint(-10,10)
-	k = random.randint(0,15)
+	k = random.randint(0,30)
 	l = random.randint(-10,10)
 	mc.setBlock(h,k,l,41,h)
 	count = count + 1
